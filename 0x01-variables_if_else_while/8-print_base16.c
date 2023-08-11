@@ -7,7 +7,7 @@ int main(void)
 {
 	int t;
 
-	for (t = 48; t <= 107; t++)
+	for (t = 48; t <= 1022; t++)
 {
 	if ((t > 57) && (t < 97))
 {
