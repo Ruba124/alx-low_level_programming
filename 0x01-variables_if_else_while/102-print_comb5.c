@@ -23,8 +23,6 @@ int main(void)
 	{ continue; }
 	if ((r > b) && (u > a))
 	{ continue; }
-	if ((r == u) && (b > a))
-	{ continue; }
 	if (r > b)
 	{ continue; }
 	if ((r == b) && (u > a))
