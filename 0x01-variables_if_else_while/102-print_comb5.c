@@ -19,8 +19,6 @@ int main(void)
 	{ continue; }
 	if ((r == b) && (u == a))
 	{ continue; }
-	if ((r == a) && (u == b))
-	{ continue; }
 	if ((r > b) && (u > a))
 	{ continue; }
 	if (r > b)
