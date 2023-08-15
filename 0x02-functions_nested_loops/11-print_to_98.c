@@ -14,13 +14,14 @@ void print_to_98(int n)
 	printf("%d", a);
 	putchar('\n');
 }
-	if (a > 98)
+	int m = a;
+	if (m > 98)
 {
-	for (l = 98; l <= a; a--)
+	for (l = 98; l <= m; m--)
 {
-	printf("%d", a);
+	printf("%d", m);
 
-	if (a == 98)
+	if (m == 98)
 {	continue; }
 	putchar (',');
 	putchar (32);
