@@ -5,7 +5,7 @@
  */
 void times_table(void)
 {
-	int a;
+	int a, b;
 
 	for(a = 0; a <= 9; a++)
 {
@@ -13,4 +13,5 @@ void times_table(void)
 {
 	printf("%d",a*b);
 }
+	putchar('\n');
 }
