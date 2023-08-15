@@ -12,7 +12,7 @@ int _abs(int a)
 	if (l > 0)
 {	return (l); }
 	else if (l < 0)
-{	return (-1); }
+{	return (-l); }
 	else
 	return (0);
 }
