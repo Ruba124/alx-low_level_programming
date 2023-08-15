@@ -10,9 +10,9 @@ int _abs(int a)
 	int l = a;
 
 	if (l > 0)
-{	return (printf("%d", l); ) }
-	else if (l <0)
-{	return (printf("%d", l/-1); ) }
+{	return (printf("%d", l); ); }
+	else if (l < 0)
+{	return (printf("%d", l/-1); ); }
 	else
 	return (0);
 }
