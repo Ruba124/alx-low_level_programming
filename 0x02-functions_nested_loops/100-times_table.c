@@ -17,11 +17,16 @@ void print_times_table(int n)
 {
 	if (b == 0)
 {
-	printf("0");
+	printf("0,");
 }
 	else
 {
-	printf("%3d,", a * b);
+	printf("%3d", a * b);
+	if ((a == n) && (b == n))
+{
+	continue;
+}
+	putchar (',');
 }
 
 }
