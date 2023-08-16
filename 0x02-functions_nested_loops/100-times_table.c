@@ -18,6 +18,7 @@ void print_times_table(int n)
 	if ((b == 0) && (n == 0))
 {
 	printf("0");
+	continue;
 }
 	if ((b == 0) && (n != 0))
 {
