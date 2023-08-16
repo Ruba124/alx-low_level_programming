@@ -7,6 +7,7 @@
 void print_times_table(int n)
 {
 	int a = n;
+	int b;
 
 	if ((a >= 0) && (a <= 15))
 {
@@ -14,7 +15,7 @@ void print_times_table(int n)
 {
 	for (b = 0; b <= n; b++)
 {
-	printf("%3d," a*b);
+	printf("%3d,", a*b);
 }
 }
 }
