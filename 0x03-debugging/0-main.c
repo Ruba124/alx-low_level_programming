@@ -5,8 +5,10 @@
 */
 int main(void)
 {
-	int a = 0;
+	int a;
 
-	positive_or_negative(0);
+	a = 98 % 48;
+
+	positive_or_negative(a);
 	return (0);
 }
