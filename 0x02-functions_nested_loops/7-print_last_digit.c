@@ -7,6 +7,12 @@
 int print_last_digit(int l)
 {
 	int a = l;
+	int m;
 
-	return (a % 10);
+	if (a < 0)
+{	m = -1 * (a % 10); }
+	else 
+{	m = (a % 10); }
+	printf("%d", m);
+	return (m);
 }
