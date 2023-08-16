@@ -21,8 +21,8 @@ void print_times_table(int n)
 }
 	else
 {
-	printf("%3d", a * b);
-	if ((a == n) && (b == n))
+	printf("%4d", a * b);
+	if (b == n)
 {
 	continue;
 }
