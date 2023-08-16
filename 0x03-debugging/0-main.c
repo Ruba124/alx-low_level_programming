@@ -7,6 +7,6 @@ int main(void)
 {
 	int a = 0;
 
-	positive_or_negative(a);
+	positive_or_negative(0);
 	return (0);
 }
