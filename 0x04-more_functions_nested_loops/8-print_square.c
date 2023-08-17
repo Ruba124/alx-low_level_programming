@@ -12,7 +12,7 @@ void print_square(int size)
 	{
 		if (size <= 0)
 		{	break; }
-		for (b = 1; b < size; b++)
+		for (b = 1; b <= size; b++)
 		{
 			_putchar (35);
 		}
