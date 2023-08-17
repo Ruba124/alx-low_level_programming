@@ -8,14 +8,14 @@ void print_diagonal(int n)
 {
 	int a, b;
 
-	for (a = 0; a < n; a++)
+	for (a = 1; a <= n; a++)
 	{
 		if (n <= 0)
 		{
 			_putchar ('\n');
 			break;
 		}
-		for (b = 0; b <= a; b++)
+		for (b = 1; b < a; b++)
 		{
 			_putchar (32);
 		}
