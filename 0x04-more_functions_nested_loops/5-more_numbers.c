@@ -13,4 +13,5 @@ void more_numbers(void)
 			printf("%d", b);
 	_putchar ('\n');
 	}
+	_putchar ('\n');
 }
