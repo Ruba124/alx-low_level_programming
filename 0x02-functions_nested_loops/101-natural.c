@@ -3,7 +3,7 @@
  * main -entry point
  * Return: always0
  */
-void main(void)
+int main(void)
 {
 	int a;
 	int s = 0;
@@ -15,4 +15,5 @@ void main(void)
 	}
 	printf("%d", s);
 	putchar ('\n');
+	return (0);
 }
