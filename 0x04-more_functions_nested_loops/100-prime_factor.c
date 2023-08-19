@@ -38,7 +38,9 @@ void _LPF(long int n)
 		}
 	}
 	if (n > 2)
+	{
 		l = n;
+	}
 		printf("%d\n", l);
 }
 /**
