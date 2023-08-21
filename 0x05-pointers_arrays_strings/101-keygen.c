@@ -10,13 +10,13 @@ int main(void)
 	int s;
 	char k;
 
-	strand(time(NULL));
+	srand(time(NULL));
 	while (s <= 2645)
 	{
 		k = rand() % 128;
 		s += k;
 		putchar (k);
 	}
-	putchar (2772 - sum);
+	putchar (2772 - s);
 	return (0);
 }
