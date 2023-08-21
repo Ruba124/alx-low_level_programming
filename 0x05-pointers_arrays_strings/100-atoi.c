@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _ato - function
+ * _atoi - function
+ * Return:number
  * @s:parameter
  */
 int _atoi(char *s)
@@ -9,7 +10,7 @@ int _atoi(char *s)
 	int m = 1;
 
 	do {
-		if (*s =='-')
+		if (*s == '-')
 			m *= -1;
 		else if (*s >= '0' && *s <= '9')
 			n = (n * 10) + (*s - '0');
