@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ * print_array - function
+ * @a:para
+ * @n:second 
+ */
+void print_array(int *a, int n)
+{
+	int l = 0;
+	while (a[l] != '\0')
+	{
+		if (l == n)
+		{	break; }
+		_putchar (a[l]);
+		l++;
+	}
+	_putchar ('\n');
+}
