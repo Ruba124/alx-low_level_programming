@@ -5,10 +5,9 @@
  */
 void _puts(char *str)
 {
-	int l;
 	while (*str != '\0')
 	{
 		_putchar(*str + 48);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
