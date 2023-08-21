@@ -6,10 +6,9 @@
 void _puts(char *str)
 {
 	int l;
-
-	for (l = 0; *str != '\0'; str++)
+	while (*str != '\0')
 	{
-		printf("%c", str);
+		_putchar(*str + 48);
 	}
 	putchar('\n');
 }
