@@ -12,7 +12,7 @@ void rev_string(char *s)
 	for (a = 1; s[a] != '\0'; ++a)
 		;
 
-	for (z = 0; z < a; z++)
+	for (z = 0; z < a / 2; z++)
 	{
 		t = s[a];
 		s[z] = s[a - 1 - z];
