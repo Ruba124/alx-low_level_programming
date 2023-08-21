@@ -11,11 +11,11 @@ void rev_string(char *s)
 
 	while (*s != '\0')
 	{
-		a++;
-		++s;
+		++a;
+		s++;
 	}
 	
-	while (z < a / 2)
+	while (z < (a / 2))
 	{
 		t = s[z];
 		s[z] = s[a - z];
