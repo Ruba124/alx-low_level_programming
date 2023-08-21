@@ -18,9 +18,10 @@ void puts_half(char *str)
 		m = l / 2;
 		while (str[n] != '\0')
 		{
-			if (n < m)
-			{	continue; }
+			if (n >= m)
+			{
 			_putchar (str[l]);
+			}
 			n++;
 		}
 		_putchar ('\n');
@@ -30,9 +31,10 @@ void puts_half(char *str)
 		j = (l - 1) / 2;
 		while (str[s] != '\0')
 		{
-			if (s < j)
-			{	continue; }
+			if (s >= j)
+			{
 			_putchar (str[s]);
+			}
 			s++;
 		}
 		_putchar ('\n');
