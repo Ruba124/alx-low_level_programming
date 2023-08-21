@@ -9,12 +9,12 @@ void rev_string(char *s)
 	int z;
 	char t;
 
-	for (a = 1; s[a] != '\0'; ++a)
+	for (a = 0; s[a] != '\0'; ++a)
 		;
 
 	for (z = 0; z < a / 2; z++)
 	{
-		t = s[a];
+		t = s[z];
 		s[z] = s[a - 1 - z];
 		s[a - 1 - z] = t;
 	}
