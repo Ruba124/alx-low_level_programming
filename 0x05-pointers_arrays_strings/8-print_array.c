@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 		printf("%d", a[l]);
 		if (n != l + 1)
 		{
-		printf(" ,");
+		printf(", ");
 		}
 		l++;
 	}
