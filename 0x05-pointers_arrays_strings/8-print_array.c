@@ -14,10 +14,10 @@ void print_array(int *a, int n)
 		if (l == n)
 		{	break; }
 		printf("%d", a[l]);
-		if (n == l + 1)
-		{	break; }
-		_putchar (32);
-		_putchar(',');
+		if (n != l + 1)
+		{
+		printf(" ,");
+		}
 		l++;
 	}
 	_putchar ('\n');
