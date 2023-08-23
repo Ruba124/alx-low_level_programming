@@ -16,4 +16,5 @@ void reverse_array(int *a, int n)
 		printf("%d", a[o]);
 		o--;
 	}
+	_putchar ('\n');
 }
