@@ -14,7 +14,7 @@ char *leet(char *c)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (*c == l[i] || *c == l[i] + 32)
+			if (*c == L[i] || *c == L[i] + 32)
 			{
 				*c = 48 + v[i];
 			}
