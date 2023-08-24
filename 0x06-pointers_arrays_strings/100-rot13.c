@@ -6,18 +6,21 @@
  */
 char *rot13(char *s)
 {
-	int t;
+	char *S = s;
+	char l[] = "abcdefghijklmnopqrstuvwxwzABCDEFGHIJKLMNOPQRSTUVWXWZ"
+	char f[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXWZABCDEFGHIJKLM"
 
-	for (t = 0; s[t] != '\0'; t++)
+	while (*s)
 	{
-		if (s[t] >= 65 && s[t] <= 78)
-		{	s[t] += 13; }
-		if (s[t] >= 97 && s[t] <= 110)
-		{	s[t] += 13; }
-		if (s[t] > 78 && s[t] <= 90)
-		{	s[t] -= 13; }
-		if (s[t] > 110 && s[t] <= 122)
-		{	s[t] -= 13; }
+		for (i = 0; i < 52; i++)
+		{
+			if (*s == l[i])
+			{
+			*s = f[i];
+			break;
+			}
+		}
+		s++;
 	}
-	return (s);
+	return (S);
 }
