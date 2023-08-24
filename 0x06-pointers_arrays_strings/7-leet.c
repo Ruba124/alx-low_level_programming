@@ -6,6 +6,7 @@
  */
 char *leet(char *c)
 {
+	char *m = c;
 	int i;
 	char L[] = {'A', 'E', 'O', 'T', 'L'};
 	int v[] = {4, 3, 0, 7, 1};
@@ -21,5 +22,5 @@ char *leet(char *c)
 		}
 		c++;
 	}
-	return (c);
+	return (m);
 }
