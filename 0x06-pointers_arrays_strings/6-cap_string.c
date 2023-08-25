@@ -10,9 +10,11 @@ int dele(char m)
 	char d[] = " \t\n,;.!?\"(){}";
 
 	for (f = 0; f < 12; f++)
+		{
 		if (m == d[f])
 			return (1);
-		return (0);
+		}
+	return (0);
 }
 /**
  * low - fun
