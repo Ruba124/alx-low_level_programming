@@ -12,5 +12,6 @@ char *leet(char *);
 char *cap_string(char *s);
 int low(char w);
 int dele(char m);
+void print_number(int n);
 
 #endif
