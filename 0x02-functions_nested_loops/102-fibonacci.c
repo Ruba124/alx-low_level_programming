@@ -4,7 +4,7 @@
  * main-prints fibo
  * Return:0
  */
-void main(void)
+int main(void)
 {
 	int c;
 	int f1 = 0;
@@ -22,5 +22,6 @@ void main(void)
 		else
 		{ printf(", "); }
 	}
+	return (0);
 }
 
