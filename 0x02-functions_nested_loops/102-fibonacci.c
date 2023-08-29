@@ -9,12 +9,12 @@ int main(void)
 	int c;
 	int f1 = 0;
 	int f2 = 1;
-	int sum;
+	long unsigned int sum;
 
 	for (c = 0; c < 50; c++)
 	{
 		sum = f1 + f2;
-		printf("%d", sum);
+		printf("%lu", sum);
 		f1 = f2;
 		f2 = sum;
 		if (c == 49)
