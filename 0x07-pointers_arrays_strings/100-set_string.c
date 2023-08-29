@@ -2,7 +2,7 @@
 /**
  * set_string - function
  * @s:pointer
- * @c:char
+ * @to:char
  */
 void set_string(char **s, char *to)
 {
