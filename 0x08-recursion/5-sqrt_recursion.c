@@ -20,6 +20,8 @@ int _sq(int n, int v)
 	{	return (v); }
 	else if (v * v < n)
 	{	return (_sq(n, v + 1)); }
+	else 
+		return (-1);
 }
 
 
