@@ -2,7 +2,7 @@
 /**
  * factorial - function
  * @n:int
- * Retern:factotial
+ * Return:factotial
  */
 int factorial(int n)
 {
