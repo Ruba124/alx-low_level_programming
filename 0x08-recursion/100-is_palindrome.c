@@ -35,7 +35,7 @@ return (to(s, 0, end - 1, end % 2));
  * @is:int3
  * Return:0
  */
-int to(char *s, int start, int end,int is)
+int to(char *s, int start, int end, int is)
 {
 if ((s[start] == s[end] && is != 0) || (s[start] == s[end + 1] && is == 0))
 	return (1);
