@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - function 
- * @argc:int 
+ * main - function
+ * @argc:int
  * @argv:array
  * Return:0
  */
