@@ -10,17 +10,20 @@ char *str_concat(char *s1, char *s2)
 {
 	int y = 0;
 	int a = 0;
-	int m, L, S;
+	int m = 0;
+	int L = 0;
+	int S;
 	char *r;
+
 	if (s1 != NULL)
 	{
-		for (m = 0; s1[m] != '\0'; m++)
+		for (; s1[m] != '\0'; m++)
 			;
 	}
 	if (s2 != NULL)
 	{
 	
-		for (L = 0; s2[L] != '\0'; L++)
+		for (; s2[L] != '\0'; L++)
 			;
 	}
 	S = m + L + 1;
