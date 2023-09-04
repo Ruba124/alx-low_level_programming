@@ -10,7 +10,7 @@ char *str_concat(char *s1, char *s2)
 {
 	int y = 0;
 	int a = 0;
-	int m , L , S;
+	int m, L, S;
 	char *r;
 
 	for (m = 0; s1[m] != '\0'; m++)
@@ -35,5 +35,3 @@ char *str_concat(char *s1, char *s2)
 	r[y] = '\0';
 	return (r);
 }
-	
-	
