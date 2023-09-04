@@ -12,16 +12,22 @@ char *str_concat(char *s1, char *s2)
 	int a = 0;
 	int m, L, S;
 	char *r;
-
-	for (m = 0; s1[m] != '\0'; m++)
-		;
-	for (L = 0; s2[L] != '\0'; L++)
-		;
+	if (s1 != NULL)
+	{
+		for (m = 0; s1[m] != '\0'; m++)
+			;
+	}
+	if (s2 != NULL)
+	{
+	
+		for (L = 0; s2[L] != '\0'; L++)
+			;
+	}
 	S = m + L + 1;
 	r = malloc(sizeof(char) * S);
 	if (r == NULL)
 	{	return (NULL); }
-	if(s1)
+	if (s1)
 	{
 		while (y < m)
 		{
