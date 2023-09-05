@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 	for (c = 0; c < ac; c++)
 	{
 		d = 0;
-		while (**av)
+		while (av[c][d])
 		{
 			d++;
 			a++;
@@ -32,15 +32,15 @@ char *argstostr(int ac, char **av)
 	for (c = 0; c < ac; c++)
 	{
 		d = 0;
-		while(**av)
+		while(av[c][d])
 		{
 			r[b] = av[c][d];
 			d++;
 			b++;
 		}
 		r[b] = '\n';
-		c++;
 		b++;
+		c++;
 	}
 	r[b] = '\0';
 	return(r);
