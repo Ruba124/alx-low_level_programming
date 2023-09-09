@@ -64,7 +64,7 @@ int check(char *ho)
 }
 /**
  * narg - function
- * ch:char
+ * @ch:char
  * Return:num
  */
 int narg(int ch);
@@ -78,39 +78,38 @@ int narg(int ch)
 }
 /**
  * main - finction
- * argc:int
- * argv:char
+ * @argc:int
+ * @argv:char
  * Return:num
  */
 int main(int argc, char **argv)
 {
 	char *num1;
-	char * num2;
-	int mul;
+	char *num2;
+	long int mul;
 
 	if (narg(argc) == 1)
 	{
-		printf("Error");
-		exit(98); 
+		printf("Error\n");
+		exit(98);
 	}
 
 	if (check(argv[1]) == 1)
 	{
 		printf("Error\n");
-		exit(98); 
+		exit(98);
 	}
 	if (check(argv[2]) == 1)
-        {
-                printf("Error\n");
-                exit(98);
-        }
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	num1 = argv[1];
 	num2 = argv[2];
-	mul = _atoi(num1)* _atoi(num2);
-	printf("%d", mul);
+	mul = _atoi(num1) * _atoi(num2);
+	printf("%ld", mul);
 	printf("\n");
 	return (0);
 }
-	
 
 
