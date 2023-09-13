@@ -9,6 +9,8 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned long int l;
+	if (!array || !action)
+	{	return; }
 
 	for (l = 0; l < size; l++)
 	{
