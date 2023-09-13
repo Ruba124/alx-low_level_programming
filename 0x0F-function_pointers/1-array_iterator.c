@@ -2,15 +2,15 @@
 #include <stddef.h>
 /**
  * array_iterator - funtion
- * array:para
- * size:type
- * action:para
+ * @array:para
+ * @size:type
+ * @action:para
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int l;
+	unsigned long int l;
 
-	for(l = 0; l < size; l++)
+	for (l = 0; l < size; l++)
 	{
 		action(array[l]);
 	}

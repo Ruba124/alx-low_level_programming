@@ -1,9 +1,9 @@
 #include "function_pointers.h"
 /**
  * int_index - function
- * array:para
- * size:para2
- * cmp:siz
+ * @array:para
+ * @size:para2
+ * @cmp:sihhh
  * Return:int
  */
 int int_index(int *array, int size, int (*cmp)(int))
