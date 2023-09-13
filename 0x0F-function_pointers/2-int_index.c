@@ -12,6 +12,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (size <= 0)
 	{	return (-1); }
+	if (!array && !cmp)
+	{	return (-1); }
 	for (l = 0; l < size; l++)
 	{
 		k = cmp(array[l]);
