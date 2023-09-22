@@ -1,10 +1,10 @@
-          global    main
-          extern    puts
-
-          section   .text
+   global    main
+          extern    printf
 main:
-          mov       rdi, message            ; First integer (or pointer) argument in rdi
-          call      puts                    
-          ret                               ; Return from main back into C library wrapper
-message:
-	db `Hello, Holberton`,0
+	  mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: 
+	db `Hello, Holberton\n`,0
