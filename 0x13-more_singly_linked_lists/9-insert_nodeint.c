@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * insert_nodeint_at_inde - function
+ * insert_nodeint_at_index - function
  * @head:para
  * @idx:para2
  * @n:para3
