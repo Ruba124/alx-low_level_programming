@@ -9,8 +9,8 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *t = NULL;
-	listint_t *o = NULL;
+	const listint_t *t = NULL;
+	const listint_t *o = NULL;
 	size_t A = 0;
 	size_t B;
 
@@ -31,9 +31,7 @@ size_t print_listint_safe(const listint_t *head)
 			o = o->next;
 		}
 		if (!head)
-		{	 exit (98); }
+		{	 exit(98); }
 	}
 	return (A);
 }
-
-
