@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * binary_to_unit - functio
+ * binary_to_uint - functio
  * Return:ll
  * @b:int
  */
