@@ -10,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t l, k, o;
 	char *ju;
-	
+
 	if (!filename || !letters)
 	{	return (0); }
 	ju = malloc(sizeof(char) * letters);
@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	o = write(STDOUT_FILENO, ju, k);
 	if (l == -1 || k == -1 || o == -1)
 	{	return (0); }
-	close (l);
+	close(l);
 	return (o);
 }
 
