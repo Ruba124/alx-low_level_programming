@@ -73,7 +73,7 @@ void PEN(unsigned long int e, unsigned char *eit)
 void PO(unsigned char *eit)
 {
 	printf("  OS/ABI:                            ");
-	switch(eit[EI_OSABI])
+	switch (eit[EI_OSABI])
 	{
 		case ELFOSABI_HPUX:
 			printf("UNIX - HP-UX\n");
@@ -81,7 +81,9 @@ void PO(unsigned char *eit)
 		case ELFOSABI_LINUX:
 			printf("UNIX - Linux\n");
 			break;
-		case ELFOSABI_SOLARIS: printf("UNIX - Solaris\n"); break;
+		case ELFOSABI_SOLARIS:
+			printf("UNIX - Solaris\n");
+			break;
 		case ELFOSABI_ARM:
 			printf("ARM\n");
 			break;
@@ -124,7 +126,7 @@ void PAB(unsigned char *eit)
 void PD(unsigned char *eit)
 {
 	printf("  Data:                              ");
-	switch(eit[EI_DATA])
+	switch (eit[EI_DATA])
 	{
 		case ELFDATANONE:
 			printf("none\n");
@@ -147,7 +149,7 @@ void PV(unsigned char *eit)
 {
 	printf("  Version:                           %d",
 			eit[EI_VERSION]);
-	switch(eit[EI_VERSION])
+	switch (eit[EI_VERSION])
 	{
 		case EV_CURRENT:
 			printf(" (current)\n");
@@ -167,7 +169,7 @@ void PV(unsigned char *eit)
 void CS(unsigned char *eit)
 {
 	printf("  Class:                             ");
-	switch(eit[EI_CLASS])
+	switch (eit[EI_CLASS])
 	{
 	case ELFCLASSNONE:
 		printf("none\n");
@@ -191,10 +193,10 @@ void PM(unsigned char *eit)
 {
 	int i = 0;
 
-	while(i < EI_NIDENT)
+	while (i < EI_NIDENT)
 	{
 		printf("%02x", eit[i]);
-		if(i == EI_NIDENT - 1)
+		if (i == EI_NIDENT - 1)
 			printf("\n");
 		else
 			printf(" ");
@@ -210,16 +212,16 @@ void C_heck(unsigned char *eit)
 {
 	int i = 0;
 
-	while(i < 4)
+	while (i < 4)
 	{
 		if (eit[i] != 127 &&
 		eit[i] != 'E' &&
 		eit[i] != 'L' &&
 		eit[i] != 'F')
-			{
-				dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
-				exit(98);
-			}
+		{
+			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
+			exit(98);
+		}
 	}
 }
 /**
@@ -247,7 +249,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int a1, a2;
-	
+
 	a1 = open(argv[1], O_RDONLY);
 	if (a1 == -1)
 	{
@@ -258,7 +260,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (header == NULL)
 	{
 		C_lose(a1);
-	        dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
 	a2 = read(a1, header, sizeof(Elf64_Ehdr));
@@ -281,5 +283,5 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	PEN(header->e_type, header->e_ident);
 	free(header);
 	C_lose(a1);
-	return(0);
+	return (0);
 }
