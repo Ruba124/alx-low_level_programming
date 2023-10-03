@@ -226,7 +226,7 @@ void C_heck(unsigned char *eit)
 }
 /**
  * C_lose - function
- * F:para
+ * @F:PARA
  * Return:any
  */
 void C_lose(int F)
@@ -253,7 +253,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	a1 = open(argv[1], O_RDONLY);
 	if (a1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: can't read file %s\n", argv[1]);
 		exit(98);
 	}
 	header = malloc(sizeof(Elf64_Ehdr));
